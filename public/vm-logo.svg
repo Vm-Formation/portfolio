@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title">
+  <title id="title">VM Formation</title>
+  <defs>
+    <linearGradient id="background" x1="48" y1="32" x2="464" y2="480" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0f172a"/>
+      <stop offset="1" stop-color="#1d4ed8"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="150" y1="142" x2="372" y2="350" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#dbeafe"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" fill="url(#background)"/>
+  <text x="250" y="338" fill="url(#accent)" font-family="Arial, Helvetica, sans-serif" font-size="218" font-weight="900" letter-spacing="-20" text-anchor="middle">VM</text>
+  <path d="M112 410h288" fill="none" stroke="#60a5fa" stroke-width="14" stroke-linecap="round"/>
+</svg>

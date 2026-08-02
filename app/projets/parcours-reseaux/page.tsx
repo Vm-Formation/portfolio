@@ -9,28 +9,26 @@ export const metadata: Metadata = {
 export default function ParcoursReseaux() {
   return <CaseStudyPage
     index="02"
-    kicker="Collection de supports pédagogiques"
-    title="Créer des cours réseau au format PDF"
-    intro="Conception et mise en page d’une collection cohérente de cours, TD et TP destinée à accompagner des débutants dans l’apprentissage des fondamentaux des réseaux."
+    kicker="Projet pédagogique"
+    title="Concevoir des supports PDF pour apprendre les réseaux"
+    intro="Création d’une collection de cours, TD et TP qui accompagne des débutants depuis les notions de base jusqu’au diagnostic d’un réseau."
     heroImage="/images/pdf-cover-bases-reseaux.png"
     heroAlt="Couverture du cours PDF Bases des réseaux informatiques"
     tags={["Cours PDF", "TD", "TP", "Réseaux"]}
     facts={[{label:"Formats",value:"Cours, TD et TP"},{label:"Progression",value:"8 thèmes + 1 synthèse"},{label:"Public",value:"Débutants et post-bac"},{label:"Diffusion",value:"Extraits publics, corrigés privés"}]}
-    asideTitle="Une collection de documents conçue pour la formation."
-    asideText="Ce projet porte sur les supports PDF eux-mêmes : leur contenu, leur progression, leurs exercices et leur mise en page. Les versions complètes et les corrigés restent privés."
+    asideTitle="Un projet complet, du cours à la mise en pratique."
+    asideText="Les documents partagent la même progression et le même cas pratique afin de relier les notions, les exercices et le diagnostic."
     blocks={[
-      {title:"L’objectif",text:"Produire des documents clairs et directement utilisables pendant une formation, aussi bien pour présenter une notion que pour guider une activité pratique."},
-      {title:"La collection documentaire",text:"Chaque thème peut être décliné selon le besoin pédagogique.",items:["Cours pour expliquer les notions et le vocabulaire","TD pour effectuer des calculs et raisonner sur des cas","TP pour manipuler, observer et diagnostiquer","Corrigés formateur conservés dans une version privée"]},
-      {title:"Une structure commune",text:"Les supports reprennent des repères stables : objectifs, prérequis, durée indicative, compétences évaluées, consignes, espaces de réponse et résultats attendus."},
-      {title:"Les thèmes traités",text:"La collection suit une progression allant des bases à la compréhension d’un échange complet.",items:["Bases des réseaux et modèle OSI","Couche physique, binaire et hexadécimal","Couche liaison et adressage IPv4","Couche réseau et couche transport","Synthèse : suivre la vie d’un paquet"]},
-      {title:"Les exercices proposés",text:"Les activités demandent de convertir des valeurs, compléter des schémas, lire une configuration, suivre un paquet ou justifier un diagnostic avec des preuves."},
-      {title:"La diffusion",text:"Le portfolio présente uniquement quelques extraits visuels. Les documents complets, leurs zones de travail et les corrigés ne sont pas publiés afin de préserver leur usage en formation."},
+      {title:"Le besoin",text:"Créer des supports compréhensibles par des débutants et directement utilisables pendant une formation en présentiel ou à distance."},
+      {title:"Mon travail",text:"J’ai défini la progression, rédigé les contenus, créé les schémas et les exercices, puis mis en page les versions cours, TD et TP.",items:["8 thèmes, des bases jusqu’à la couche transport","Documents apprenant avec zones de réponse","TP guidés puis activités plus autonomes","Corrigés formateur conservés séparément"]},
+      {title:"La structure pédagogique",text:"Le même réseau fictif, Atelier Nova, sert de fil rouge.",items:["Cours : comprendre le réseau et le vocabulaire","TD : raisonner sur une situation ou un calcul","TP : appliquer une méthode étape par étape","Synthèse : diagnostiquer une panne et justifier la correction"]},
+      {title:"Le résultat",text:"Une collection cohérente qui démontre des compétences en réseaux, en conception pédagogique, en rédaction technique et en mise en page. Le portfolio montre uniquement des extraits ; les documents complets et les corrigés restent privés."},
     ]}
     gallery={[
-      {src:"/images/pdf-cover-bases-reseaux.png",alt:"Couverture du cours PDF Bases des réseaux informatiques",caption:"Le cours principal présente les équipements, les protocoles et le trajet des données."},
-      {src:"/images/pdf-td-modele-osi.png",alt:"Couverture du TD PDF consacré au modèle OSI",caption:"Le TD Modèle OSI propose dix exercices progressifs dans une version apprenant remplissable."},
-      {src:"/images/pdf-tp-ipv4.png",alt:"Couverture du TP PDF Découpage IPv4 et CIDR",caption:"Le TP IPv4 guide les calculs de sous-réseaux et la construction d’un plan VLSM."},
-      {src:"/images/pdf-tp-packet-tracer.png",alt:"Couverture du TP PDF Vie complète d’un paquet",caption:"Le TP de synthèse demande de construire, observer et diagnostiquer un réseau dans Packet Tracer."},
+      {src:"/images/pdf-fil-rouge-atelier-nova.png",alt:"Schéma du réseau fictif Atelier Nova utilisé dans les supports PDF",caption:"1. Le cours introduit Atelier Nova, le réseau qui relie tous les supports."},
+      {src:"/images/pdf-td-osi-exercices.png",alt:"Exercices du TD sur le modèle OSI",caption:"2. Le TD fait raisonner l’apprenant sur des situations concrètes."},
+      {src:"/images/pdf-tp-ipv4-etape.png",alt:"Étape guidée du TP IPv4 et CIDR",caption:"3. Le TP guide l’application de la méthode avec des zones de réponse."},
+      {src:"/images/pdf-tp-incident-diagnostic.png",alt:"Étape de diagnostic autonome du TP Packet Tracer",caption:"4. La synthèse demande d’identifier une panne, de la prouver puis de la corriger."},
     ]}
     nextHref="/projets/site-vm-formation/"
     nextLabel="Voir le projet du site"

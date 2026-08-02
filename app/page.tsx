@@ -15,14 +15,14 @@ const projects = [
   },
   {
     index: "02",
-    type: "Parcours de formation",
-    title: "Fondamentaux des réseaux",
-    summary: "Création d’un parcours allant des bases des réseaux jusqu’au diagnostic, avec huit modules, une synthèse, des quiz, des mini-labs et des TP.",
-    role: "Scénarisation · Rédaction · Exercices · Évaluation",
-    image: asset("/images/case-roadmap.png"),
-    alt: "Feuille de route du parcours Fondamentaux des réseaux",
+    type: "Supports pédagogiques PDF",
+    title: "Cours sur les fondamentaux des réseaux",
+    summary: "Création d’une collection de cours, TD et TP au format PDF sur les fondamentaux des réseaux, avec exercices progressifs et espaces de réponse.",
+    role: "Conception pédagogique · Rédaction · Mise en page · Exercices",
+    image: asset("/images/pdf-sommaire-binaire.png"),
+    alt: "Extrait d’un support de cours PDF sur le binaire et l’hexadécimal",
     href: asset("/projets/parcours-reseaux/"),
-    tags: ["Réseaux", "Pédagogie", "Mise en pratique"],
+    tags: ["Cours PDF", "TD / TP", "Réseaux"],
   },
 ];
 

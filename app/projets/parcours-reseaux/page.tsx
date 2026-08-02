@@ -2,35 +2,35 @@ import type { Metadata } from "next";
 import CaseStudyPage from "../CaseStudyPage";
 
 export const metadata: Metadata = {
-  title: "Parcours Fondamentaux des réseaux | Portfolio",
-  description: "Présentation détaillée du parcours Fondamentaux des réseaux créé pour VM Formation.",
+  title: "Supports PDF — Fondamentaux des réseaux | Portfolio",
+  description: "Présentation d’une collection de cours, TD et TP en PDF consacrée aux fondamentaux des réseaux.",
 };
 
 export default function ParcoursReseaux() {
   return <CaseStudyPage
     index="02"
-    kicker="Parcours de formation"
-    title="Créer le parcours Fondamentaux des réseaux"
-    intro="Conception d’un cours progressif destiné aux débutants, depuis les premiers repères jusqu’à l’analyse et au diagnostic d’un échange réseau."
-    heroImage="/images/case-roadmap.png"
-    heroAlt="Feuille de route des modules du parcours réseaux"
-    tags={["Réseaux", "Scénarisation", "Exercices", "Évaluation"]}
-    facts={[{label:"Structure",value:"8 modules + 1 synthèse"},{label:"Quiz",value:"7 banques et 93 questions"},{label:"Pratique",value:"Mini-labs et 3 missions"},{label:"Fil rouge",value:"La PME fictive Atelier Nova"}]}
-    asideTitle="Un cours complet, organisé comme un seul projet."
-    asideText="Les modules, le scénario Atelier Nova, les quiz et les TP ne sont pas des projets séparés : ils composent ensemble le parcours Fondamentaux des réseaux."
+    kicker="Collection de supports pédagogiques"
+    title="Créer des cours réseau au format PDF"
+    intro="Conception et mise en page d’une collection cohérente de cours, TD et TP destinée à accompagner des débutants dans l’apprentissage des fondamentaux des réseaux."
+    heroImage="/images/pdf-sommaire-binaire.png"
+    heroAlt="Extrait du sommaire d’un cours PDF sur le binaire et l’hexadécimal"
+    tags={["Cours PDF", "TD", "TP", "Réseaux"]}
+    facts={[{label:"Formats",value:"Cours, TD et TP"},{label:"Progression",value:"8 thèmes + 1 synthèse"},{label:"Public",value:"Débutants et post-bac"},{label:"Diffusion",value:"Extraits publics, corrigés privés"}]}
+    asideTitle="Une collection de documents conçue pour la formation."
+    asideText="Ce projet porte sur les supports PDF eux-mêmes : leur contenu, leur progression, leurs exercices et leur mise en page. Les versions complètes et les corrigés restent privés."
     blocks={[
-      {title:"L’objectif",text:"Permettre à un débutant de comprendre comment les équipements, les supports, les adresses et les protocoles coopèrent pour transporter une information."},
-      {title:"La progression",text:"Le parcours avance dans un ordre conçu pour éviter les notions isolées.",items:["Bases des réseaux et modèle OSI","Couche physique et représentation binaire","Couche liaison et adressage IP","Couche réseau et couche transport","Synthèse : suivre la vie d’un paquet"]},
-      {title:"Le scénario Atelier Nova",text:"Une PME fictive de 32 personnes sert de contexte commun. Son réseau rassemble postes filaires, Wi-Fi interne et invité, switch central, pare-feu-routeur et serveur d’infrastructure."},
-      {title:"Les activités intégrées",text:"Chaque type d’activité remplit une fonction dans le parcours.",items:["Contrôles courts pour vérifier les repères","Mini-labs pour appliquer une règle","Quiz pour valider un module","TP guidés puis missions semi-guidées ou autonomes"]},
-      {title:"Le diagnostic réseau",text:"Les missions demandent de réunir des preuves avant de modifier une configuration. L’apprenant doit expliquer la cause, proposer une correction et valider le retour au fonctionnement."},
-      {title:"Le résultat pédagogique",text:"Le parcours relie les calculs, les schémas, les configurations et les commandes à une démarche cohérente : comprendre, pratiquer, expliquer puis diagnostiquer."},
+      {title:"L’objectif",text:"Produire des documents clairs et directement utilisables pendant une formation, aussi bien pour présenter une notion que pour guider une activité pratique."},
+      {title:"La collection documentaire",text:"Chaque thème peut être décliné selon le besoin pédagogique.",items:["Cours pour expliquer les notions et le vocabulaire","TD pour effectuer des calculs et raisonner sur des cas","TP pour manipuler, observer et diagnostiquer","Corrigés formateur conservés dans une version privée"]},
+      {title:"Une structure commune",text:"Les supports reprennent des repères stables : objectifs, prérequis, durée indicative, compétences évaluées, consignes, espaces de réponse et résultats attendus."},
+      {title:"Les thèmes traités",text:"La collection suit une progression allant des bases à la compréhension d’un échange complet.",items:["Bases des réseaux et modèle OSI","Couche physique, binaire et hexadécimal","Couche liaison et adressage IPv4","Couche réseau et couche transport","Synthèse : suivre la vie d’un paquet"]},
+      {title:"Les exercices proposés",text:"Les activités demandent de convertir des valeurs, compléter des schémas, lire une configuration, suivre un paquet ou justifier un diagnostic avec des preuves."},
+      {title:"La diffusion",text:"Le portfolio présente uniquement quelques extraits visuels. Les documents complets, leurs zones de travail et les corrigés ne sont pas publiés afin de préserver leur usage en formation."},
     ]}
     gallery={[
-      {src:"/images/atelier-nova.png",alt:"Schéma réseau de la PME fictive Atelier Nova",caption:"Le réseau Atelier Nova sert de fil rouge aux différents modules."},
-      {src:"/images/case-diagnostic.png",alt:"Mission de diagnostic réseau du poste de Léa",caption:"Une mission met l’apprenant face à une panne de passerelle."},
-      {src:"/images/case-interactive.png",alt:"Atelier binaire et hexadécimal",caption:"Les ateliers transforment les conversions en automatismes utiles."},
-      {src:"/images/quiz-interactif.png",alt:"Quiz de validation des connaissances réseau",caption:"Les banques de questions permettent une validation progressive."},
+      {src:"/images/atelier-nova.png",alt:"Page PDF présentant le scénario réseau Atelier Nova",caption:"Un schéma de réseau sert de fil rouge à plusieurs supports."},
+      {src:"/images/tp-diagnostic.png",alt:"Page d’informations pratiques d’un TP de diagnostic réseau",caption:"Les TP précisent les objectifs, les prérequis, le matériel et les preuves attendues."},
+      {src:"/images/pdf-sommaire-binaire.png",alt:"Page PDF du cours sur le binaire et l’hexadécimal",caption:"Chaque cours annonce sa progression et les compétences travaillées."},
+      {src:"/images/activite-binaire.png",alt:"Exercice PDF de conversion du binaire vers le décimal",caption:"Les TD alternent exemples, exercices et zones prévues pour les réponses."},
     ]}
     nextHref="/projets/site-vm-formation/"
     nextLabel="Voir le projet du site"

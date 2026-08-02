@@ -8,8 +8,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     { url: url("./"), changeFrequency: "monthly", priority: 1 },
-    { url: url("projets/parcours-reseaux/"), changeFrequency: "monthly", priority: 0.8 },
-    { url: url("projets/diagnostic-reseau/"), changeFrequency: "monthly", priority: 0.8 },
-    { url: url("projets/activites-interactives/"), changeFrequency: "monthly", priority: 0.8 },
+    { url: url("projets/site-vm-formation/"), changeFrequency: "monthly", priority: 0.9 },
+    { url: url("projets/parcours-reseaux/"), changeFrequency: "monthly", priority: 0.9 },
   ];
 }

@@ -73,7 +73,7 @@ export default function CaseStudyPage(props: CaseStudyProps) {
 
       <section className="case-next">
         <p className="eyebrow"><span /> Continuer</p>
-        <h2>Découvrir une autre preuve de conception pédagogique.</h2>
+        <h2>Voir l’autre projet présenté dans le portfolio.</h2>
         <div className="case-next-actions">
           <a className="button button-primary" href={asset(props.nextHref)}>{props.nextLabel} <span>→</span></a>
           <a className="button button-secondary" href="https://vm-formation.fr" target="_blank" rel="noreferrer">Visiter vm-formation.fr <span>↗</span></a>

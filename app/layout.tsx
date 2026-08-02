@@ -16,23 +16,23 @@ const organizationData = {
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: "VM Formation | Formateur informatique et réseaux",
-  description: "Formation informatique pour débutants, initiation aux réseaux et animation de formations à distance ou sur site dans les Hauts-de-France.",
+  title: "Portfolio VM Formation | Projets web et pédagogiques",
+  description: "Portfolio présentant les projets réalisés par VM Formation : site pédagogique et parcours Fondamentaux des réseaux.",
   icons: {
     icon: `${publicBasePath}/vm-logo.svg`,
     shortcut: `${publicBasePath}/vm-logo.svg`,
   },
   openGraph: {
-    title: "VM Formation | Formateur informatique et réseaux",
-    description: "Les réseaux expliqués pour être vraiment compris, à distance ou sur site dans les Hauts-de-France.",
+    title: "Portfolio VM Formation | Projets web et pédagogiques",
+    description: "Présentation du site VM Formation et du parcours Fondamentaux des réseaux.",
     type: "website",
     locale: "fr_FR",
     images: [{ url: ogImage, width: 1672, height: 941, alt: "Portfolio VM Formation" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "VM Formation | Formateur informatique et réseaux",
-    description: "Formation informatique pour débutants, à distance ou sur site dans les Hauts-de-France.",
+    title: "Portfolio VM Formation | Projets web et pédagogiques",
+    description: "Présentation du site VM Formation et du parcours Fondamentaux des réseaux.",
     images: [ogImage],
   },
 };

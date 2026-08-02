@@ -33,10 +33,10 @@ const caseStudies = [
   {
     number: "01",
     title: "Construire un parcours réseaux progressif",
-    text: "Neuf modules reliés par un même scénario, des bases jusqu’à la synthèse de la vie d’un paquet.",
-    meta: "Architecture pédagogique · 9 modules",
+    text: "Huit modules publiés et une synthèse reliés par un même scénario, des bases jusqu’à la vie d’un paquet.",
+    meta: "Architecture pédagogique · 8 modules + synthèse",
     href: asset("/projets/parcours-reseaux/"),
-    image: asset("/images/parcours-modules.png"),
+    image: asset("/images/case-roadmap.png"),
   },
   {
     number: "02",
@@ -44,7 +44,7 @@ const caseStudies = [
     text: "Une mission semi-guidée où l’apprenant collecte des preuves avant de corriger une passerelle incohérente.",
     meta: "Diagnostic · Mission professionnelle",
     href: asset("/projets/diagnostic-reseau/"),
-    image: asset("/images/tp-diagnostic.png"),
+    image: asset("/images/case-diagnostic.png"),
   },
   {
     number: "03",
@@ -52,7 +52,7 @@ const caseStudies = [
     text: "Quiz, mini-labs et contrôles courts pour pratiquer, recevoir une correction et mesurer sa progression.",
     meta: "Évaluation · 93 questions disponibles",
     href: asset("/projets/activites-interactives/"),
-    image: asset("/images/mini-labs.png"),
+    image: asset("/images/case-interactive.png"),
   },
 ];
 
@@ -88,7 +88,7 @@ export default function Home() {
         </div>
         <div className="hero-visual" aria-label="Aperçu du projet VM Formation">
           <div className="orbit orbit-one" /><div className="orbit orbit-two" />
-          <div className="visual-note note-top"><span>09</span> modules progressifs</div>
+          <div className="visual-note note-top"><span>08+1</span> modules et synthèse</div>
           <div className="browser-card">
             <div className="browser-bar"><i /><i /><i /><span>vm-formation.fr</span></div>
             <img src={asset("/images/missions-professionnelles.png")} alt="Aperçu des missions professionnelles VM Formation" />
@@ -119,7 +119,7 @@ export default function Home() {
 
       <section className="production-stats" aria-label="Chiffres du parcours réseaux">
         <p>Un portfolio alimenté par des réalisations concrètes</p>
-        <div><span><strong>09</strong> modules structurés</span><span><strong>93</strong> questions de quiz</span><span><strong>03</strong> missions professionnelles</span><span><strong>07</strong> banques d’évaluation</span></div>
+        <div><span><strong>08+1</strong> modules et synthèse</span><span><strong>93</strong> questions de quiz</span><span><strong>03</strong> missions professionnelles</span><span><strong>07</strong> banques d’évaluation</span></div>
       </section>
 
       <section className="section projects" id="realisations">
@@ -174,8 +174,8 @@ export default function Home() {
       <section className="section pathway" id="parcours">
         <div className="pathway-copy">
           <p className="eyebrow"><span /> Parcours réseaux</p>
-          <h2>Neuf modules, un même fil conducteur.</h2>
-          <p>Le programme part des bases, suit la vie d’un paquet et construit progressivement les réflexes nécessaires pour comprendre puis diagnostiquer un réseau.</p>
+          <h2>Huit modules et une synthèse, un même fil conducteur.</h2>
+          <p>Le programme part des bases, progresse jusqu’à la couche transport, puis suit la vie d’un paquet pour consolider les réflexes de diagnostic.</p>
           <a className="text-link" href="https://vm-formation.fr" target="_blank" rel="noreferrer">Explorer le site de formation <span>↗</span></a>
         </div>
         <ol className="module-list">{modules.map((module, index) => <li key={module}><span>{String(index + 1).padStart(2, "0")}</span><strong>{module}</strong></li>)}</ol>

@@ -12,8 +12,8 @@ export default function DiagnosticReseau() {
     kicker="Mise en situation"
     title="Faire raisonner sur une panne réelle"
     intro="Le poste de Léa n’accède plus au serveur : l’apprenant doit analyser la topologie, collecter des preuves et isoler la cause avant toute correction."
-    heroImage="/images/tp-diagnostic.png"
-    heroAlt="Cadre pédagogique du TP de diagnostic réseau"
+    heroImage="/images/case-diagnostic.png"
+    heroAlt="Mission interactive de diagnostic du poste de Léa"
     tags={["Diagnostic", "IPv4", "Passerelle", "Preuves"]}
     facts={[{label:"Format",value:"Mission semi-guidée"},{label:"Durée",value:"Environ 15 minutes"},{label:"Livrable",value:"Cause, preuves et correction"},{label:"Compétence",value:"Diagnostiquer le chemin aller-retour"}]}
     asideTitle="Passer de la réponse juste à la preuve technique."

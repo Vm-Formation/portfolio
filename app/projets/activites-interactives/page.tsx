@@ -12,8 +12,8 @@ export default function ActivitesInteractives() {
     kicker="Évaluation interactive"
     title="Rendre l’entraînement visible et motivant"
     intro="Des exercices courts permettent de vérifier un automatisme, comprendre une erreur et se préparer aux missions plus longues."
-    heroImage="/images/mini-labs.png"
-    heroAlt="Mini-labs interactifs de vérification réseau"
+    heroImage="/images/case-interactive.png"
+    heroAlt="Ateliers interactifs de conversion binaire et hexadécimale"
     tags={["Quiz", "Mini-labs", "Correction", "Progression"]}
     facts={[{label:"Banques",value:"7 quiz thématiques"},{label:"Volume",value:"93 questions disponibles"},{label:"Formats",value:"Quiz, contrôles et mini-labs"},{label:"Retour",value:"Correction immédiate"}]}
     asideTitle="Évaluer pour faire progresser, pas seulement pour noter."

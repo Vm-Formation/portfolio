@@ -24,7 +24,7 @@ const asset = (path: string) => `${publicBasePath}${path}`;
 
 export default function CaseStudyPage(props: CaseStudyProps) {
   return (
-    <main className="case-page">
+    <main className={`case-page case-page-${props.index}`}>
       <header className="case-header">
         <a className="brand" href={asset("/")} aria-label="Retour au portfolio VM Formation">
           <img src={asset("/vm-logo.svg")} alt="" width="38" height="38" />

@@ -29,6 +29,33 @@ const credentials = [
 
 const modules = ["Bases des réseaux", "Modèle OSI", "Couche physique", "Binaire & hexadécimal", "Couche liaison", "Adressage IPv4", "Couche réseau", "Couche transport", "Synthèse : vie d’un paquet"];
 
+const caseStudies = [
+  {
+    number: "01",
+    title: "Construire un parcours réseaux progressif",
+    text: "Neuf modules reliés par un même scénario, des bases jusqu’à la synthèse de la vie d’un paquet.",
+    meta: "Architecture pédagogique · 9 modules",
+    href: asset("/projets/parcours-reseaux/"),
+    image: asset("/images/parcours-modules.png"),
+  },
+  {
+    number: "02",
+    title: "Faire raisonner sur une panne réelle",
+    text: "Une mission semi-guidée où l’apprenant collecte des preuves avant de corriger une passerelle incohérente.",
+    meta: "Diagnostic · Mission professionnelle",
+    href: asset("/projets/diagnostic-reseau/"),
+    image: asset("/images/tp-diagnostic.png"),
+  },
+  {
+    number: "03",
+    title: "Rendre l’entraînement interactif",
+    text: "Quiz, mini-labs et contrôles courts pour pratiquer, recevoir une correction et mesurer sa progression.",
+    meta: "Évaluation · 93 questions disponibles",
+    href: asset("/projets/activites-interactives/"),
+    image: asset("/images/mini-labs.png"),
+  },
+];
+
 export default function Home() {
   return (
     <main>
@@ -90,6 +117,11 @@ export default function Home() {
         {credentials.map((item) => <article key={item.value + item.label}><strong>{item.value}</strong><p>{item.label}</p></article>)}
       </section>
 
+      <section className="production-stats" aria-label="Chiffres du parcours réseaux">
+        <p>Un portfolio alimenté par des réalisations concrètes</p>
+        <div><span><strong>09</strong> modules structurés</span><span><strong>93</strong> questions de quiz</span><span><strong>03</strong> missions professionnelles</span><span><strong>07</strong> banques d’évaluation</span></div>
+      </section>
+
       <section className="section projects" id="realisations">
         <div className="section-heading">
           <div><p className="eyebrow"><span /> Réalisations sélectionnées</p><h2>Des supports pensés pour faire progresser.</h2></div>
@@ -104,6 +136,7 @@ export default function Home() {
             <dl className="case-details"><div><dt>Objectif</dt><dd>Donner aux débutants un chemin lisible vers l’autonomie.</dd></div><div><dt>Réalisation</dt><dd>Parcours modulaire, mini-labs, évaluations et corrections.</dd></div><div><dt>Valeur</dt><dd>Des acquis visibles à chaque étape.</dd></div></dl>
             <div className="tag-row"><span>Conception pédagogique</span><span>Développement web</span><span>Expérience apprenant</span></div>
             <a className="project-link" href="https://vm-formation.fr" target="_blank" rel="noreferrer">Voir le site VM Formation <span>↗</span></a>
+            <a className="project-link project-link-secondary" href={asset("/projets/parcours-reseaux/")}>Lire l’étude de cas <span>→</span></a>
           </div>
           <a className="project-main-image" href={platformGallery[0].src} target="_blank" rel="noreferrer" aria-label="Ouvrir l’image des missions professionnelles"><img src={platformGallery[0].src} alt={platformGallery[0].alt} /><span>Voir en grand ↗</span></a>
           <div className="gallery gallery-four">{platformGallery.slice(1).map((image) => <a href={image.src} target="_blank" rel="noreferrer" key={image.src}><img src={image.src} alt={image.alt} /></a>)}</div>
@@ -116,10 +149,26 @@ export default function Home() {
             <p className="project-lead">Un parcours complet qui relie le modèle OSI, l’adressage IPv4, la commutation, le routage et le diagnostic.</p>
             <dl className="case-details"><div><dt>Fil rouge</dt><dd>Le réseau d’une PME fictive évolue avec le cours.</dd></div><div><dt>Pratique</dt><dd>Calculs, schémas, observations et diagnostics justifiés.</dd></div><div><dt>Progression</dt><dd>Du guidé au semi-guidé, puis à l’autonomie.</dd></div></dl>
             <div className="tag-row"><span>IPv4 / CIDR</span><span>Modèle OSI</span><span>TP pratiques</span></div>
+            <a className="project-link" href={asset("/projets/diagnostic-reseau/")}>Voir le cas diagnostic <span>→</span></a>
           </div>
           <a className="project-main-image" href={networkGallery[0].src} target="_blank" rel="noreferrer" aria-label="Ouvrir le schéma Atelier Nova"><img src={networkGallery[0].src} alt={networkGallery[0].alt} /><span>Voir en grand ↗</span></a>
           <div className="gallery gallery-two">{networkGallery.slice(1).map((image) => <a href={image.src} target="_blank" rel="noreferrer" key={image.src}><img src={image.src} alt={image.alt} /></a>)}</div>
         </article>
+      </section>
+
+      <section className="section case-study-index" id="etudes-de-cas">
+        <div className="section-heading">
+          <div><p className="eyebrow"><span /> Études de cas</p><h2>Entrer dans les choix de conception.</h2></div>
+          <p>Trois dossiers expliquent le besoin de départ, la réponse créée, les compétences mobilisées et la valeur pédagogique recherchée.</p>
+        </div>
+        <div className="case-study-grid">
+          {caseStudies.map((study) => (
+            <article key={study.number}>
+              <a className="case-study-image" href={study.href}><img src={study.image} alt="" /></a>
+              <div className="case-study-body"><span className="case-study-number">{study.number}</span><p className="case-study-meta">{study.meta}</p><h3>{study.title}</h3><p>{study.text}</p><a className="case-study-link" href={study.href}>Découvrir le projet <span>→</span></a></div>
+            </article>
+          ))}
+        </div>
       </section>
 
       <section className="section pathway" id="parcours">

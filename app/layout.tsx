@@ -4,6 +4,15 @@ import "./globals.css";
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000/";
 const publicBasePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 const ogImage = new URL("og.png", siteUrl).toString();
+const organizationData = {
+  "@context": "https://schema.org",
+  "@type": "EducationalOrganization",
+  name: "VM Formation",
+  url: "https://vm-formation.fr",
+  description: "Formation informatique pour débutants, initiation aux réseaux et accompagnement numérique.",
+  areaServed: "Hauts-de-France",
+  knowsAbout: ["Réseaux informatiques", "IPv4", "Modèle OSI", "Administration systèmes et réseaux", "Pédagogie"],
+};
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -31,7 +40,10 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="fr">
-      <body>{children}</body>
+      <body>
+        {children}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationData) }} />
+      </body>
     </html>
   );
 }

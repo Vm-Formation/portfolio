@@ -7,23 +7,23 @@ const ogImage = new URL("og.png", siteUrl).toString();
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: "Portfolio | VM Formation",
-  description: "Conception de parcours de formation en réseaux, infrastructure informatique et culture numérique.",
+  title: "VM Formation | Formateur informatique et réseaux",
+  description: "Formation informatique pour débutants, initiation aux réseaux et animation de formations à distance ou sur site dans les Hauts-de-France.",
   icons: {
     icon: `${publicBasePath}/vm-logo.svg`,
     shortcut: `${publicBasePath}/vm-logo.svg`,
   },
   openGraph: {
-    title: "Portfolio | VM Formation",
-    description: "Rendre la technique claire, concrète et mémorable.",
+    title: "VM Formation | Formateur informatique et réseaux",
+    description: "Les réseaux expliqués pour être vraiment compris, à distance ou sur site dans les Hauts-de-France.",
     type: "website",
     locale: "fr_FR",
     images: [{ url: ogImage, width: 1672, height: 941, alt: "Portfolio VM Formation" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Portfolio | VM Formation",
-    description: "Rendre la technique claire, concrète et mémorable.",
+    title: "VM Formation | Formateur informatique et réseaux",
+    description: "Formation informatique pour débutants, à distance ou sur site dans les Hauts-de-France.",
     images: [ogImage],
   },
 };

@@ -1,33 +1,36 @@
+const publicBasePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+const asset = (path: string) => `${publicBasePath}${path}`;
+
 const platformGallery = [
   {
-    src: "/images/missions-professionnelles.png",
+    src: asset("/images/missions-professionnelles.png"),
     alt: "Missions professionnelles organisées du niveau guidé au niveau autonome",
   },
   {
-    src: "/images/parcours-modules.png",
+    src: asset("/images/parcours-modules.png"),
     alt: "Parcours de huit modules consacrés aux fondamentaux des réseaux",
   },
   {
-    src: "/images/mini-labs.png",
+    src: asset("/images/mini-labs.png"),
     alt: "Mini-labs interactifs de vérification réseau",
   },
   {
-    src: "/images/quiz-interactif.png",
+    src: asset("/images/quiz-interactif.png"),
     alt: "Quiz interactif avec score et progression",
   },
 ];
 
 const networkGallery = [
   {
-    src: "/images/atelier-nova.png",
+    src: asset("/images/atelier-nova.png"),
     alt: "Schéma du réseau de la PME fictive Atelier Nova",
   },
   {
-    src: "/images/tp-diagnostic.png",
+    src: asset("/images/tp-diagnostic.png"),
     alt: "Informations pratiques d’un TP de diagnostic réseau",
   },
   {
-    src: "/images/activite-binaire.png",
+    src: asset("/images/activite-binaire.png"),
     alt: "Activité pédagogique de conversion du binaire vers le décimal",
   },
 ];
@@ -58,7 +61,7 @@ export default function Home() {
     <main>
       <header className="site-header">
         <a className="brand" href="#top" aria-label="Retour en haut de la page">
-          <img src="/vm-logo.svg" alt="" width="38" height="38" />
+          <img src={asset("/vm-logo.svg")} alt="" width="38" height="38" />
           <span>
             <strong>VM</strong> Formation
           </span>
@@ -94,7 +97,7 @@ export default function Home() {
           <div className="visual-note note-top"><span>08</span> modules progressifs</div>
           <div className="browser-card">
             <div className="browser-bar"><i /><i /><i /><span>vm-formation.fr</span></div>
-            <img src="/images/missions-professionnelles.png" alt="Aperçu des missions professionnelles VM Formation" />
+            <img src={asset("/images/missions-professionnelles.png")} alt="Aperçu des missions professionnelles VM Formation" />
           </div>
           <div className="visual-note note-bottom"><b>✓</b><span><strong>Apprendre en faisant</strong>Quiz, labs et missions</span></div>
         </div>
@@ -197,7 +200,7 @@ export default function Home() {
       </section>
 
       <footer>
-        <a className="brand footer-brand" href="#top"><img src="/vm-logo.svg" alt="" width="34" height="34" /><span><strong>VM</strong> Formation</span></a>
+        <a className="brand footer-brand" href="#top"><img src={asset("/vm-logo.svg")} alt="" width="34" height="34" /><span><strong>VM</strong> Formation</span></a>
         <p>Portfolio · Formation informatique & conception pédagogique</p>
         <a href="#top">Retour en haut ↑</a>
       </footer>

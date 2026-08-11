@@ -10,5 +10,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: url("./"), changeFrequency: "monthly", priority: 1 },
     { url: url("projets/site-vm-formation/"), changeFrequency: "monthly", priority: 0.9 },
     { url: url("projets/parcours-reseaux/"), changeFrequency: "monthly", priority: 0.9 },
+    { url: url("projets/systemes-virtualisation/"), changeFrequency: "monthly", priority: 0.9 },
   ];
 }

@@ -24,6 +24,17 @@ const projects = [
     href: asset("/projets/parcours-reseaux/"),
     tags: ["Cours PDF", "TD / TP", "Réseaux"],
   },
+  {
+    index: "03",
+    type: "Parcours systèmes et virtualisation",
+    title: "Linux, VMware et Windows Server",
+    summary: "Conception de trois parcours progressifs consacrés aux bases de Linux, à la virtualisation avec VMware et à l’administration de Windows Server.",
+    role: "Architecture pédagogique · Rédaction technique · TD / TP · Contrôle qualité",
+    image: asset("/images/pdf-cover-virtualisation-vmware.png"),
+    alt: "Couverture du cours Comprendre la virtualisation",
+    href: asset("/projets/systemes-virtualisation/"),
+    tags: ["Linux", "VMware", "Windows Server"],
+  },
 ];
 
 export default function Home() {
@@ -45,7 +56,7 @@ export default function Home() {
       </section>
 
       <section className="portfolio-projects" id="projets">
-        <div className="portfolio-section-title"><p className="eyebrow"><span /> Projets sélectionnés</p><h2>Deux réalisations principales.</h2></div>
+        <div className="portfolio-section-title"><p className="eyebrow"><span /> Projets sélectionnés</p><h2>Trois réalisations principales.</h2></div>
         <div className="portfolio-project-list">
           {projects.map((project) => (
             <article className="portfolio-project" key={project.index}>

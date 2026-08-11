@@ -17,14 +17,14 @@ const organizationData = {
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: "Portfolio VM Formation | Projets web et pédagogiques",
-  description: "Portfolio présentant les projets réalisés par VM Formation : site pédagogique et parcours Fondamentaux des réseaux.",
+  description: "Portfolio présentant les projets réalisés par VM Formation : site pédagogique, réseaux, systèmes et virtualisation.",
   icons: {
     icon: `${publicBasePath}/vm-logo.svg`,
     shortcut: `${publicBasePath}/vm-logo.svg`,
   },
   openGraph: {
     title: "Portfolio VM Formation | Projets web et pédagogiques",
-    description: "Présentation du site VM Formation et du parcours Fondamentaux des réseaux.",
+    description: "Présentation des projets web et pédagogiques de VM Formation : réseaux, Linux, VMware et Windows Server.",
     type: "website",
     locale: "fr_FR",
     images: [{ url: ogImage, width: 1672, height: 941, alt: "Portfolio VM Formation" }],
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Portfolio VM Formation | Projets web et pédagogiques",
-    description: "Présentation du site VM Formation et du parcours Fondamentaux des réseaux.",
+    description: "Présentation des projets web et pédagogiques de VM Formation : réseaux, Linux, VMware et Windows Server.",
     images: [ogImage],
   },
 };

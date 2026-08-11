@@ -7,6 +7,7 @@ Portfolio professionnel consacré à la formation informatique et à la concepti
 - présentation de VM Formation ;
 - plateforme e-learning et parcours pédagogiques ;
 - parcours spécialisé sur les fondamentaux des réseaux ;
+- parcours consacrés aux bases de Linux, à VMware et à Windows Server ;
 - expertise en conception pédagogique, infrastructure et développement web ;
 - mise en page responsive et accessible.
 

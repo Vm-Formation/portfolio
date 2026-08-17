@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import "./globals.css";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000/";
 const publicBasePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
@@ -40,6 +39,9 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="fr">
+      <head>
+        <link rel="stylesheet" href={`${publicBasePath}/portfolio.css`} />
+      </head>
       <body>
         {children}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationData) }} />

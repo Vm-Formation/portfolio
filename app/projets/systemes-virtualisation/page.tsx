@@ -57,9 +57,15 @@ export default function SystemesVirtualisation() {
       },
     ]}
     gallery={[
-      {src:"/images/pdf-cover-bases-linux.png",alt:"Couverture du cours Découverte de Linux et de ses usages",caption:"Bases Linux — 12 thèmes pour découvrir, utiliser et diagnostiquer un système Linux."},
-      {src:"/images/pdf-cover-virtualisation-vmware.png",alt:"Couverture du cours Comprendre la virtualisation",caption:"Virtualisation VMware — 12 thèmes, de l’hyperviseur au diagnostic d’une machine virtuelle."},
-      {src:"/images/pdf-cover-windows-server.png",alt:"Couverture du cours Découvrir Windows Server et ses usages",caption:"Bases Windows Server — 12 thèmes consacrés à l’installation, l’administration et la maintenance."},
+      {src:"/images/pdf-cover-bases-linux.png",alt:"Couverture du cours Découverte de Linux et de ses usages",caption:"Linux — couverture d’un parcours de 12 thèmes."},
+      {src:"/images/apercu-linux-cours-terminal.png",alt:"Extrait du cours Linux sur les redirections, pipelines et variables",caption:"Linux — notions expliquées, commandes commentées, erreurs fréquentes et mini-défis."},
+      {src:"/images/apercu-linux-tp-diagnostic.png",alt:"Extrait du TP Linux avec une carte incident autonome",caption:"Linux — une activité de diagnostic autonome avec preuves et remise en état."},
+      {src:"/images/pdf-cover-virtualisation-vmware.png",alt:"Couverture du cours Comprendre la virtualisation",caption:"VMware — couverture d’un parcours de 12 thèmes."},
+      {src:"/images/apercu-vmware-cours-reseaux.png",alt:"Extrait du cours VMware sur les réseaux NAT et host-only",caption:"VMware — comparaison des modes réseau et application au laboratoire Atelier Nova."},
+      {src:"/images/apercu-vmware-tp-creation.png",alt:"Extrait du TP VMware consacré à la création d’une machine virtuelle",caption:"VMware — consigne de manipulation, précaution, preuve attendue et zone de compte rendu."},
+      {src:"/images/pdf-cover-windows-server.png",alt:"Couverture du cours Découvrir Windows Server et ses usages",caption:"Windows Server — couverture d’un parcours de 12 thèmes."},
+      {src:"/images/apercu-windows-cours-powershell.png",alt:"Extrait du cours Windows Server sur PowerShell",caption:"Windows Server — administration PowerShell avec aide, filtrage, export et bonnes pratiques."},
+      {src:"/images/apercu-windows-tp-configuration.png",alt:"Extrait du TP Windows Server sur la configuration IPv4",caption:"Windows Server — configuration IPv4 guidée avec commande, contrôle et retour arrière."},
     ]}
     nextHref="/projets/site-vm-formation/"
     nextLabel="Revenir au projet du site"

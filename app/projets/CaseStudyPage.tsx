@@ -66,8 +66,20 @@ export default function CaseStudyPage(props: CaseStudyProps) {
           </div>
         </div>
 
+        <div className="case-gallery-heading">
+          <p className="eyebrow"><span /> Aperçus sélectionnés</p>
+          <h2>Voir concrètement le travail réalisé.</h2>
+          <p>Chaque image peut être agrandie. Les documents complets et les corrigés ne sont pas publiés.</p>
+        </div>
         <div className="case-gallery">
-          {props.gallery.map((image) => <figure key={image.src}><img src={asset(image.src)} alt={image.alt} /><figcaption>{image.caption}</figcaption></figure>)}
+          {props.gallery.map((image) => (
+            <figure key={image.src}>
+              <a href={asset(image.src)} target="_blank" rel="noreferrer" aria-label={`Agrandir : ${image.alt}`}>
+                <img src={asset(image.src)} alt={image.alt} loading="lazy" />
+              </a>
+              <figcaption>{image.caption}</figcaption>
+            </figure>
+          ))}
         </div>
       </section>
 

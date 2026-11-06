@@ -45,7 +45,12 @@ export default function Home() {
           <img src={asset("/vm-logo.svg")} alt="" width="38" height="38" />
           <span><strong>VM</strong> Formation</span>
         </a>
-        <nav aria-label="Navigation principale"><a href="#projets">Projets</a><a href="#profil">Profil</a><a href="https://vm-formation.fr" target="_blank" rel="noreferrer">Site VM Formation ↗</a></nav>
+        <nav aria-label="Navigation principale">
+          <a href="#projets">Projets</a>
+          <a href="#profil">Profil</a>
+          <a href="https://www.youtube.com/channel/UCuiaqaqKY0xohXZdYQcFzhw" target="_blank" rel="noreferrer">YouTube ↗</a>
+          <a href="https://vm-formation.fr" target="_blank" rel="noreferrer">Site VM Formation ↗</a>
+        </nav>
       </header>
 
       <section className="portfolio-hero" id="top">
@@ -82,10 +87,25 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="portfolio-youtube" aria-labelledby="youtube-title">
+        <div className="portfolio-youtube-mark" aria-hidden="true">▶</div>
+        <div className="portfolio-youtube-copy">
+          <p className="eyebrow"><span /> Chaîne YouTube</p>
+          <h2 id="youtube-title">Les projets continuent aussi en vidéo.</h2>
+          <p>Retrouvez VM Formation sur YouTube pour suivre les démonstrations, les explications techniques et les prochaines publications.</p>
+        </div>
+        <a className="button portfolio-youtube-button" href="https://www.youtube.com/channel/UCuiaqaqKY0xohXZdYQcFzhw" target="_blank" rel="noreferrer">
+          Découvrir la chaîne <span>↗</span>
+        </a>
+      </section>
+
       <footer className="portfolio-footer">
         <a className="brand footer-brand" href="#top"><img src={asset("/vm-logo.svg")} alt="" width="34" height="34" /><span><strong>VM</strong> Formation</span></a>
         <p>Portfolio de créations pédagogiques et numériques</p>
-        <a href="https://vm-formation.fr" target="_blank" rel="noreferrer">vm-formation.fr ↗</a>
+        <div className="portfolio-footer-links">
+          <a href="https://www.youtube.com/channel/UCuiaqaqKY0xohXZdYQcFzhw" target="_blank" rel="noreferrer">YouTube ↗</a>
+          <a href="https://vm-formation.fr" target="_blank" rel="noreferrer">vm-formation.fr ↗</a>
+        </div>
       </footer>
     </main>
   );

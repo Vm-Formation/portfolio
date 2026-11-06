@@ -11,6 +11,7 @@ const organizationData = {
   description: "Formation informatique pour débutants, initiation aux réseaux et accompagnement numérique.",
   areaServed: "Hauts-de-France",
   knowsAbout: ["Réseaux informatiques", "IPv4", "Modèle OSI", "Administration systèmes et réseaux", "Pédagogie"],
+  sameAs: ["https://www.youtube.com/channel/UCuiaqaqKY0xohXZdYQcFzhw"],
 };
 
 export const metadata: Metadata = {
